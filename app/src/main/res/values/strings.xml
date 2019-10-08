@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scorekeeping app</string>
+    <string name="firstteam">Team A</string>
+    <string name="scoreforteama">A SCORE</string>
+    <string name="teamadown">-</string>
+    <string name="teamaup">+</string>
+    <string name="secondteam">TEAM B</string>
+    <string name="scoreforteamb">B SCORE</string>
+    <string name="teambdown">-</string>
+    <string name="teambup">+</string>
+
+</resources>
