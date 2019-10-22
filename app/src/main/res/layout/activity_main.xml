@@ -1,135 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/SECOND"
+            android:layout_width=""
+            android:layout_height="100dp"
+            android:text="@string/secondteam"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/scoreforteamb"
+            android:layout_width="131dp"
+            android:layout_height="100dp"
+            android:text="@string/scoreforteamb"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/teambdown"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="131dp"
+            android:layout_height="100dp"
+            android:text="@string/teambdown"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="131dp"
+            android:layout_height="100dp"
+            android:text="@string/teambup"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/FIRST"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/firstteam"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/scoreforteama"
+            android:layout_width="131dp"
+            android:layout_height="100dp"
+
+            android:text="@string/scoreforteama"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/teamaup"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/teamaup"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/teamadown"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:text="@string/teamadown"
+            android:textSize="30sp" />
+
+    </TableRow>
+    <RadioGroup
+        android:id="@+id/roundingRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="310dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="409dp"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/FIRST"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="163dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="163dp"
-        android:layout_marginBottom="43dp"
-        android:text="@string/firstteam"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toTopOf="@+id/DISPLAY SC"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RadioButton
+        android:id="@+id/noRoundingRadioButton"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:checked="true"
+        android:text="@string/icrBy1"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/TEAM A DN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="74dp"
-        android:text="@string/teamadown"
-        app:layout_constraintBottom_toTopOf="@+id/SECOND"
-        app:layout_constraintEnd_toStartOf="@+id/TEAM A UP"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DISPLAY SC" />
+    <RadioButton
+        android:id="@+id/roundTipRadioButton"
+        android:layout_width="131dp"
+        android:layout_height="50dp"
+        android:text="@string/icrBy2"
+        android:textAlignment="center"
+        android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/TEAM A UP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="74dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginBottom="74dp"
-        android:text="@string/teamaup"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TEAM A DN"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.491" />
 
-    <TextView
-        android:id="@+id/DISPLAY SC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="174dp"
-        android:layout_marginBottom="49dp"
-        android:text="@string/scoreforteama"
-        app:layout_constraintBottom_toTopOf="@+id/TEAM A UP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/FIRST" />
+</TableLayout>
 
-    <TextView
-        android:id="@+id/SECOND"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="182dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="182dp"
-        android:layout_marginBottom="255dp"
-        android:text="@string/secondteam"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TEAM A UP" />
-
-    <TextView
-        android:id="@+id/DISPLAY B SCORE"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginTop="43dp"
-        android:layout_marginEnd="169dp"
-        android:layout_marginBottom="43dp"
-        android:text="@string/scoreforteamb"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.411"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SECOND"
-        app:layout_constraintVertical_bias="0.042" />
-
-    <Button
-        android:id="@+id/TEAM B DN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/teambdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DISPLAY B SCORE" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="101dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/teambup"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/TEAM B DN"
-        app:layout_constraintTop_toBottomOf="@+id/DISPLAY B SCORE" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>

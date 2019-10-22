@@ -8,5 +8,6 @@
     <string name="scoreforteamb">B SCORE</string>
     <string name="teambdown">-</string>
     <string name="teambup">+</string>
-
+    <string name="icrBy1">increment BY 1</string>
+    <string name="icrBy2">increment By 2</string>
 </resources>
