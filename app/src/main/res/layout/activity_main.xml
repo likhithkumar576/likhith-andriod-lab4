@@ -2,99 +2,154 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/btn_star_big_on"
+    android:textAlignment="textEnd"
+    android:textDirection="firstStrongLtr"
     tools:context=".MainActivity">
 
     <TableRow
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
         <TextView
             android:id="@+id/SECOND"
-            android:layout_width=""
+            android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:backgroundTintMode="src_over"
             android:text="@string/secondteam"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="30sp" />
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="@android:color/white"
+            android:textDirection="firstStrong"
+            android:textSize="30sp"
+            android:textStyle="italic" />
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
         <TextView
             android:id="@+id/scoreforteamb"
             android:layout_width="131dp"
             android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:backgroundTintMode="src_over"
             android:text="@string/scoreforteamb"
-            android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textAlignment="textEnd"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_red_dark"
+            android:textDirection="firstStrongLtr"
+            android:textSize="32sp"
+            android:textStyle="italic" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
         <Button
             android:id="@+id/teambdown"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="131dp"
             android:layout_height="100dp"
+            android:background="#3C1370"
+            android:backgroundTintMode="src_over"
             android:text="@string/teambdown"
-            android:textSize="30sp" />
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textDirection="firstStrongLtr"
+            android:textSize="60sp" />
 
         <Button
             android:id="@+id/button8"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="131dp"
             android:layout_height="100dp"
+            android:background="@android:color/holo_purple"
+            android:backgroundTintMode="src_over"
             android:text="@string/teambup"
-            android:textSize="30sp" />
+            android:textAlignment="center"
+            android:textDirection="firstStrongLtr"
+            android:textSize="60sp" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
         <TextView
             android:id="@+id/FIRST"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:background="@android:color/holo_green_dark"
+            android:backgroundTintMode="src_over"
             android:text="@string/firstteam"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="30sp" />
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textDirection="firstStrongLtr"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_bright"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
         <TextView
             android:id="@+id/scoreforteama"
             android:layout_width="131dp"
             android:layout_height="100dp"
 
+            android:background="@android:color/holo_blue_dark"
+            android:backgroundTintMode="src_over"
             android:text="@string/scoreforteama"
-            android:textAlignment="center"
-            android:textSize="30sp" />
+            android:textAlignment="textEnd"
+            android:textDirection="firstStrongLtr"
+            android:textSize="30sp"
+            android:textStyle="italic" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
         <Button
             android:id="@+id/teamaup"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:background="@android:color/black"
+            android:backgroundTintMode="src_over"
             android:text="@string/teamaup"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textDirection="firstStrongLtr"
             android:textSize="30sp" />
 
         <Button
@@ -102,32 +157,52 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:background="@android:color/background_dark"
+            android:backgroundTintMode="src_over"
             android:text="@string/teamadown"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textDirection="firstStrongLtr"
             android:textSize="30sp" />
 
     </TableRow>
+
     <RadioGroup
         android:id="@+id/roundingRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:background="#009E3030"
+        android:backgroundTint="#FFFFFF"
+        android:backgroundTintMode="src_over"
+        android:orientation="vertical"
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr">
 
     <RadioButton
         android:id="@+id/noRoundingRadioButton"
         android:layout_width="131dp"
         android:layout_height="50dp"
+        android:background="@android:color/darker_gray"
+        android:backgroundTintMode="src_over"
         android:checked="true"
         android:text="@string/icrBy1"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textAlignment="textEnd"
+        android:textColorLink="@android:color/holo_red_dark"
+        android:textDirection="firstStrongLtr"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
 
     <RadioButton
         android:id="@+id/roundTipRadioButton"
         android:layout_width="131dp"
         android:layout_height="50dp"
+        android:background="@android:color/holo_red_light"
+        android:backgroundTintMode="src_over"
         android:text="@string/icrBy2"
-        android:textAlignment="center"
-        android:textSize="30sp" />
+        android:textAlignment="textEnd"
+        android:textDirection="firstStrongLtr"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
 
 
 </TableLayout>
